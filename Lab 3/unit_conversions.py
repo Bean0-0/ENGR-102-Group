@@ -14,7 +14,11 @@
 #
 #
 from math import*
+
+
 quantity = float(input("Please enter the quantity to be converted: "))
+
+#pounds --> newtons
 pounds_to_newtons_converter = 4.45
 newtons = quantity * pounds_to_newtons_converter
 print (f"{quantity:.2f} pounds force is equivalent to {newtons:.2f} newtons")
