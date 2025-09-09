@@ -44,7 +44,7 @@ def posStr(t, point_num):
     y = y0 + (y1 - y0) / dt * (t - t0) 
     z = z0 + (z1 - z0) / dt * (t - t0)
 
-    m = f"At time {t:.2f} seconds the object is at  ({x:.3f}, {y:.3f}, {z:.3f})"
+    m = f"At time {t:.2f} seconds the the object is at  ({x:.3f}, {y:.3f}, {z:.3f})"
 
     return m
 
