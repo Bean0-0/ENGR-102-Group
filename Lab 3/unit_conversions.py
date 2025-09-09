@@ -23,3 +23,14 @@ pounds_to_newtons_converter = 4.45
 newtons = quantity * pounds_to_newtons_converter
 print (f"{quantity:.2f} pounds force is equivalent to {newtons:.2f} newtons")
 
+#meters --> feet
+meters_to_feet_converter = 3.28
+feet = quantity * meters_to_feet_converter
+print (f"{quantity:.2f} meters is equivalent to {feet} feet")
+
+#atmospheres --> kilopascals
+atmospheres_to_kilopascals_converter = 101.33
+kilopascals = quantity * atmospheres_to_kilopascals_converter
+print (f"{quantity:.2f} atmospheres is equivalent to {kilopascals} kilopascals")
+
+
