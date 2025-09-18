@@ -9,19 +9,25 @@
 # Radwan Merhebi
 # Section: 564
 # Assignment: Lab 4
-# Date: 9/18/2025
+# Date: 9/17/2025
+from sympy import symbols
 
-from math import*
+A = int(input("Please enter the coefficient A: "))
+B = int(input("Please enter the coefficient B: "))
+C = int(input("Please enter the coefficient C: "))
 
-#get user inputs 
-a = int(input("Please enter the coeffecient A: "))
-b = int(input("Please enter the coeffecient B: "))
-c = int(input("Please enter the coeffecient C: "))
+x = symbols('x')
 
-#equation variable
+# Create the quadratic expression using SymPy
+equation = A*x**2 + B*x + C
+# Format the equation string
+equation_str = str(equation).replace('**', '^').replace('*', '')
 
-equation = (f"{a}x^2 + {b}x + {c}")
+# Add space
+equation_str = equation_str.replace('-x', '- x')
 
-#conditionals for equations
+# Handle cases like -2x^2, -3x, etc.
+import re
+equation_str = re.sub(r'-(\d)', r'- \1', equation_str)
 
-
+print(f"The quadratic equation is {equation_str} = 0")
